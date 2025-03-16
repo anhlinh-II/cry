@@ -1,4 +1,4 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #ffd166, #ff914d);
     color: #111111;
@@ -7,7 +7,9 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+
 .container {
     width: 90%;
     margin: auto;
@@ -17,7 +19,7 @@ body {
 
 .search-bar input {
     width: 40%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
     border: none;
     text-align:left;
@@ -25,10 +27,10 @@ body {
 }
 .top-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: -330px;
+    /* margin-top: -330px; */
 }
 .left {
     width: 250px;
@@ -41,12 +43,26 @@ body {
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
+.left div img {
+    width: 50px; /* Thay đổi kích thước theo nhu cầu */
+    height: auto; /* Giữ tỷ lệ */
+}
+
+.left div {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 8px; /* Điều chỉnh khoảng cách giữa img và span */
+    justify-content: center;
+    padding: 10px;
+}
+
 .humidity,.sunrise,.sunset,.windspeed,.rainlevel,.visibility {
     background: rgba(255, 255, 255, 0.5);
-    padding: 15px; /* Giảm chiều dài của box */
+    padding: 0px; /* Giảm chiều dài của box */
     border-radius: 12px;
     font-size: 16px;
-    width: 60%; 
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,33 +87,49 @@ body {
     font-size: 16px;
 }
 .main-info {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
     flex: 1;
-    margin-left: -200px;
-    color: aliceblue;
-}
-.main-info h1{
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 1px 1px rgba(7, 5, 5, 0.1);
+    color: white;
 }
 
-.main-info .time{
-    font-size: 18px;
+.capital {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Khoảng cách giữa city và country */
+    font-size: 24px;
     font-weight: bold;
-    text-shadow: 0 4px 10px rgba(7, 5, 5, 0.1);
-    margin-top: -10px;
+}
+
+.main-info .time {
+    font-size: 16px;
+    color: white;
 }
 .main-info .temperature {
     font-size: 100px;
     font-weight: bold;
     font-family: Helvetica, sans-serif;
     text-shadow: 1px 1px #484444;
-}
-.main-info .weather-icon{
-    padding: 10px;
     position: relative;
-    top:30px;
+    bottom: 50px;
+}
+
+.weather-img {
+    font-size: 50px;
+}
+
+.weather-des {
+    position: relative;
+    bottom: 50px;
+}
+
+.main-info .weather-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px; /* Khoảng cách giữa ảnh và mô tả thời tiết */
 }
 .main-info p {
     font-size: 18px;
@@ -155,7 +187,7 @@ body {
 }
 .weather-hour-icon{
     width: 30px;
-} 
+}
 
 .hour span{
     font-size: 20px;
