@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="search" placeholder="Search location..."/>
+        <div class="main-info">
+            <h1 class = "capital">
+                <span class="city"></span>
+                <span class="country"></span>
+            </h1>
+            <div class="time"></div>
+            <div class="weather-icon"><img id="weatherImg" src="default.png" alt="default.png">
+                <p id="weather-description"></p>
+            </div>
+            <div class="temperature"><span class="value"><sup></sup></span></div>
+        </div>
+
+        <div class="top-section">
+            <div class="left">
+                <div class="sunrise"><img src="Icon/sunrise.png" alt="sunrise"></div>
+                <div class="sunset"><img src="Icon/sunset.png" alt="sundown"></div>
+                <div class="visibility"><img src="Icon/visibility.png" alt="visibility"></div>
+                <div class="windspeed"><img src="Icon/windspeed.png" alt="windspeed"></div>
+                <div class="rainlevel"><img src="Icon/rainlevel.png" alt="rainlevel"></div>
+                <div class="humidity"><img src="Icon/humidity.png" alt="humidity"></div>
+            </div> 
+            
+            <div class="weather-hourly">
+                <div class="hour">
+                    <span>Now</span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+            
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+                <div class="hour">
+                    <span></span>
+                    <img src="default.png" class="weather-hour-icon" alt="weather icon">
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="forecast">
+            <div class="day" id="day1">
+                <h2></h2>
+                <img src="" alt="Weather Icon" class="weather-day-icon">
+                <span></span>
+            </div>
+            <div class="day" id="day2">
+                <h2></h2>
+                <img src="" alt="Weather Icon" class="weather-day-icon">
+                <span></span>
+            </div>
+            <div class="day" id="day3">
+                <h2></h2>
+                <img src="" alt="Weather Icon" class="weather-day-icon">
+                <span></span>
+            </div>
+            <div class="day" id="day4">
+                <h2></h2>
+                <img src="" alt="Weather Icon" class="weather-day-icon">
+                <span></span>
+            </div>
+            <div class="day" id="day5">
+                <h2></h2>
+                <img src="" alt="Weather Icon" class="weather-day-icon">
+                <span></span>
+            </div>
+    </div>
+</body>
+<script src="script.js"></script>
+    
+</html>
